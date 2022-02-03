@@ -1,7 +1,7 @@
 # XOR-linked-list
 Academic project which aim was to implement XOR linked list using C++.
 
-# Detailed description of the task
+## Detailed description of the task
 
 The task is based on implement a bidirectional list. A classic bidirectional list stores successor and predecessor addresses in nodes, in our task the list stores only xor of these addresses in nodes. This saves approximately 50% of memory used by the list structure.
 
@@ -13,7 +13,7 @@ In the case of deleting a node, updating the xor values of the deleted node's pr
 
 The task requires that we have an additional pointer showing the current value used by the ACTUAL command described later. In this case, we also need to keep one of the neighbors (successor or predecessor, preferably both) of pointer showing the current value. Otherwise, we will not be able to restore their addresses (successor or predecessor of the current element). In this case, we must additionally store one of the neighbors (successor or predecessor, preferably both), otherwise we will not be able to restore their addresses. It would seem that this does not apply to the first and last node, but we are not able to conclude (without additional information) that the index to the current element just points to one of the boundary elements.
 
-###The list provides the following functionalities related to the following commands:
+The list provides the following functionalities related to the following commands:
 
 - ACTUAL - value of the currently pointed element. For an empty list it is NULL and after adding the first element to the list ACTUAL returns the value of that element as long as it is not moved by other operations.
 - NEXT - prints the value of the ACTUAL successor setting it ACTUAL at the same time. If ACTUAL points to the last element of the queue, its successor will be the first element of the queue.
